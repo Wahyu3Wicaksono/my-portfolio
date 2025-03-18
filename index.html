@@ -1,26 +1,60 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Halo, Saya [Nama Kamu]</h1>
-        <p>Web Developer | Designer | Freelancer</p>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
+
     <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Ini adalah tempat di mana saya menampilkan karya dan pengalaman saya.</p>
+        <h2>About Me</h2>
+        <p>Hello! I'm Wahyu, an engineer specializing in instrumentation, electrical, and automation.</p>
     </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Instrumentation</li>
+            <li>Electrical Engineering</li>
+            <li>Automation Systems</li>
+        </ul>
+    </section>
+
     <section id="projects">
-        <h2>Proyek Saya</h2>
-        <p>Berikut adalah beberapa proyek yang pernah saya kerjakan.</p>
+        <h2>Projects</h2>
+        <p>Here are some of my recent projects:</p>
+        <ul>
+            <li>Automation of XYZ System</li>
+            <li>Designing and Testing Sensors</li>
+        </ul>
     </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Wahyu Tri Wicaksono. All rights reserved.</p>
+        <p>© 2025 Wahyu's Portfolio</p>
     </footer>
     <script src="script.js"></script>
 </body>
