@@ -3,52 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Wahyu's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">Wahyu's Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Wahyu, an engineer specializing in instrumentation, electrical, and automation.</p>
+    <section id="home" class="home">
+        <h2>Hello, I'm Wahyu</h2>
+        <p>Engineer | Instrumentation | Automation</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Instrumentation</li>
-            <li>Electrical Engineering</li>
-            <li>Automation Systems</li>
-        </ul>
+        <div class="skill-item">
+            <label>Instrumentation</label>
+            <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-item">
+            <label>Electrical Engineering</label>
+            <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-item">
+            <label>Automation Systems</label>
+            <div class="progress"><div class="progress-bar" style="width: 95%;"></div></div>
+        </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="projects">
         <h2>Projects</h2>
-        <p>Here are some of my recent projects:</p>
-        <ul>
-            <li>Automation of XYZ System</li>
-            <li>Designing and Testing Sensors</li>
-        </ul>
+        <div class="project-gallery">
+            <div class="project-item">Automation of XYZ</div>
+            <div class="project-item">Sensor Design</div>
+            <div class="project-item">Electrical System Upgrade</div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
         <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
