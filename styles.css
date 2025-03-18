@@ -1,157 +1,214 @@
-/* General Styling */
+/* General Styles */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
     color: #333;
-    background: #f4f4f9;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
 }
 
-/* Header Styling */
+body.dark-mode {
+    background-color: #181818;
+    color: #eee;
+}
+
+/* Header */
 .header {
-    text-align: center;
-    padding: 2rem;
     background: linear-gradient(to bottom, #0077cc, #005bb5);
-    color: white;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header h1 {
+.header .main-title {
     font-size: 2.5rem;
     margin: 0;
 }
 
-.header p {
-    margin: 0.5rem 0;
+.header .subtitle {
+    margin-top: 0.5rem;
     font-size: 1.2rem;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.navbar ul {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
 }
 
-nav ul li {
-    display: inline;
+.navbar ul li {
+    margin: 0 15px;
 }
 
-nav ul a {
+.navbar ul a {
     text-decoration: none;
-    color: white;
+    color: #fff;
+    font-weight: bold;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    border: 1px solid white;
     border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-nav ul a:hover {
-    background: white;
+.navbar ul a:hover {
+    background: #fff;
     color: #0077cc;
 }
 
-/* Section Styling */
-section {
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    animation: fadeIn 2s ease;
+}
+
+.hero .btn-main {
+    background: #0077cc;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hero .btn-main:hover {
+    background: #005bb5;
+}
+
+/* Skills */
+.skills {
+    background: #f9f9f9;
     padding: 50px 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-h2 {
-    color: #0077cc;
-    margin-bottom: 20px;
+.skill h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-/* Skills Section */
-.skill-item {
-    margin: 20px 0;
-}
-
-.progress {
-    width: 70%;
-    height: 20px;
-    margin: 0 auto;
+.progress-bar-container {
     background: #ddd;
     border-radius: 10px;
+    height: 20px;
+    position: relative;
     overflow: hidden;
 }
 
 .progress-bar {
+    background: #0077cc;
     height: 100%;
-    background: #0077cc;
-    animation: fillProgress 2s ease-in-out;
-}
-
-/* Projects Section */
-.project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.project-item {
-    width: 200px;
-    height: 150px;
-    background: #0077cc;
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 5px;
+    line-height: 20px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: bold;
+    animation: growBar 2s ease-in-out;
+}
+
+/* Projects */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-item:hover {
+.project-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Section */
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+.project-card h3, .project-card p {
+    margin: 15px;
+    color: #0077cc;
 }
 
-form input,
-form textarea,
-form button {
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-form button {
-    background: #0077cc;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #005bb5;
-}
-
-/* Footer Styling */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-/* Animation for Progress Bars */
-@keyframes fillProgress {
+@keyframes growBar {
     from {
         width: 0;
     }
     to {
-        width: var(--progress-width);
+        width: var(--width);
     }
+}
+
+/* Contact Section */
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form button {
+    background: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+    background: #005bb5;
 }

@@ -5,116 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wahyu Tri Wicaksono - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
-        <h1>Wahyu Tri Wicaksono</h1>
-        <p>Engineer | Instrumentation | Electrical | Automation</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="main-title">Wahyu Tri Wicaksono</h1>
+            <p class="subtitle">Engineer | Instrumentation | Electrical | Automation</p>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a highly motivated and enthusiastic Engineer with a strong foundation in engineering principles. My expertise lies in
-            instrumentation, electrical, and automation systems, with hands-on experience in PLC, DCS, and SCADA technologies.
-        </p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill-item">
-            <label>Instrumentation</label>
-            <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
-        </div>
-        <div class="skill-item">
-            <label>Electrical Engineering</label>
-            <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
-        </div>
-        <div class="skill-item">
-            <label>Automation Systems</label>
-            <div class="progress"><div class="progress-bar" style="width: 95%;"></div></div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to My Professional World</h2>
+            <p>Discover my journey as an engineer specializing in cutting-edge technologies.</p>
+            <a href="#about" class="btn-main">Explore More</a>
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>System Engineer (DCS DeltaV Engineer)</h3>
-            <p><strong>PT. Control Systems Arena Para Nusa</strong> (Aug 2024 - Present)</p>
-            <ul>
-                <li>Developed design documents and control modules for DCS DeltaV systems.</li>
-                <li>Performed routine maintenance services and supported troubleshooting.</li>
-                <li>Executed Factory Acceptance Testing (FAT) and Site Acceptance Testing (SAT).</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Instrument and Control Engineer</h3>
-            <p><strong>PT. Mandau Cipta Tenaga Nusantara</strong> (May 2024 - Aug 2024)</p>
-            <ul>
-                <li>Managed phase 3 upgrade and redundancy of the control system.</li>
-                <li>Supervised Fire Alarm System improvements and DCS integration.</li>
-                <li>Conducted Hot Gas Path and Fire Alarm inspections at the NDC plant.</li>
-            </ul>
+    <!-- ABOUT ME -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated engineer passionate about creating impactful solutions in instrumentation, electrical, and automation systems.
+                With a strong technical foundation and hands-on experience, I strive to innovate and solve challenges in diverse industries.
+            </p>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-gallery">
-            <div class="project-item">
-                <h4>Network Upgrade & DCS Redundancy</h4>
-                <p>Managed the upgrade from Ovation to Honeywell for enhanced reliability and performance.</p>
-            </div>
-            <div class="project-item">
-                <h4>Automatic Water Pumping with IoT</h4>
-                <p>Developed a smart water pumping system for efficient water level management.</p>
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Instrumentation</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Automation Systems</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 95%;">95%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Electrical Engineering</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 85%;">85%</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>🥇 Winner, Siaga Awards 2022 - Hydrogen Technology Research</li>
-            <li>🥉 Bronze Medal, PKM Riset Eksakta, PIMNAS 2022</li>
-            <li>🥈 Silver Medal, AGREETION 2022 with TABUR-21</li>
-        </ul>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>System Engineer - PT. Control Systems Arena Para Nusa</h3>
+                    <p><span>Aug 2024 - Present</span></p>
+                    <ul>
+                        <li>Developed design documents and control modules for DCS DeltaV systems.</li>
+                        <li>Performed Factory Acceptance Testing (FAT) and site commissioning activities.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Instrument and Control Engineer - PT. Mandau Cipta Tenaga Nusantara</h3>
+                    <p><span>May 2024 - Aug 2024</span></p>
+                    <ul>
+                        <li>Managed phase 3 upgrade and redundancy of control systems.</li>
+                        <li>Supervised Fire Alarm System improvements integrated with DCS.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <ul>
-            <li>Basic Building Management Systems - Urcoursez Academy, Apr 2024</li>
-            <li>Fundamental Piping and Instrumentation Diagram - Engineering Academy, Mar 2024</li>
-            <li>Field Instrument Engineer - Insys Exclusyve, Feb 2023</li>
-        </ul>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-gallery">
+                <div class="project-card" onclick="showProjectModal('project1')">
+                    <h3>Network Upgrade & DCS Redundancy</h3>
+                    <p>Enhanced system reliability and integrated Fire Alarm Systems.</p>
+                </div>
+                <div class="project-card" onclick="showProjectModal('project2')">
+                    <h3>IoT-Based Monitoring System</h3>
+                    <p>Developed IoT-enabled system for real-time hydrogen monitoring.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-main">Send Message</button>
+            </form>
+        </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© 2025 Wahyu Tri Wicaksono - Portfolio</p>
+        <div class="container">
+            <p>© 2025 Wahyu Tri Wicaksono. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="https://linkedin.com/in/wahyutriw" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:wahyutriwicaksono29@gmail.com">Email</a></li>
+            </ul>
+        </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
